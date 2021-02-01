@@ -121,6 +121,7 @@
             justify-content: center;
   }
   .header-top .row .col-6:nth-child(1) ul {
+    width: 100%;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
@@ -132,6 +133,7 @@
             justify-content: center;
   }
   .header-top .row .col-6:nth-child(2):nth-child(2) ul {
+    width: 100%;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;

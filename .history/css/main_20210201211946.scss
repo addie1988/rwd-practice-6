@@ -86,7 +86,6 @@ $header-menu-backrround:  rgba(0,0,0,.6);
                 &:nth-child(1) {
                     justify-content: center;
                     ul {
-                        width: 100%;
                         justify-content: center;
                         padding: 0;
                     }
@@ -94,9 +93,24 @@ $header-menu-backrround:  rgba(0,0,0,.6);
                 &:nth-child(2) {
                     justify-content: center;
                     &:nth-child(2) ul {
-                        width: 100%;
                         justify-content: center;
                         padding: 0;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .header-top {
+        .header-top-content {
+            .row {
+                .col-6 {
+                    &:nth-child(1) {justify-content: center;}
+                    &:nth-child(2) {justify-content: center;}
+                    ul {
+                        width: 100%;
                     }
                 }
             }
