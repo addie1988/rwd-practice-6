@@ -28,6 +28,8 @@
     <!-- icon -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/fork-awesome@1.1.7/css/fork-awesome.min.css"
         integrity="sha256-gsmEoJAws/Kd3CjuOQzLie5Q3yshhvmo7YNtBG7aaEY=" crossorigin="anonymous">
+    <!-- jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 </head>
 
 
@@ -508,7 +510,8 @@
                 <div class="time">
                     Friday, 6<sup>th</sup> April 2045
                 </div>
-                <p>Nullam eu velit vestibulum egestas nisi lacinia fringilla lectus mauris enim magna placerat venenatis.</p>
+                <p>Nullam eu velit vestibulum egestas nisi lacinia fringilla lectus mauris enim magna placerat
+                    venenatis.</p>
             </div>
             <div class="col-3">
                 <h6>Molestie elit id</h6>
@@ -532,8 +535,8 @@
             </div>
         </div>
     </div>
-     <!-- footer-bottom -->
-     <div class="footer-bottom">
+    <!-- footer-bottom -->
+    <div class="footer-bottom">
         <div class="footer-bottom-content">
             <div class="row">
                 <div class="col-6">Copyright © 2009 - 2021 - All Rights Reserved - <a href="#">Domain Name</a></div>
@@ -548,7 +551,7 @@
 <div class="gotop">
     <a href="#">
         <i class="fa fa-angle-up"></i>
-     </a>
+    </a>
 </div>
 
 
@@ -556,23 +559,23 @@
 
 
 <script type="text/javascript">
-    $(function() {
+    $(function () {
         /* 按下GoTop按鈕時的事件 */
-        $('.gotop').click(function(){
+        $('.gotop').click(function () {
             $('html,body').animate({ scrollTop: 0 }, 'slow');   /* 返回到最頂上 */
             return false;
         });
-        
+
         /* 偵測卷軸滑動時，往下滑超過400px就讓GoTop按鈕出現 */
-        $(window).scroll(function() {
-            if ( $(this).scrollTop() > 400){
+        $(window).scroll(function () {
+            if ($(this).scrollTop() > 400) {
                 $('.gotop').fadeIn();
             } else {
                 $('.gotop').fadeOut();
             }
         });
     });
-    </script>   
+</script>
 
 
 

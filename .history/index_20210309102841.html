@@ -28,6 +28,8 @@
     <!-- icon -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/fork-awesome@1.1.7/css/fork-awesome.min.css"
         integrity="sha256-gsmEoJAws/Kd3CjuOQzLie5Q3yshhvmo7YNtBG7aaEY=" crossorigin="anonymous">
+    <!-- jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 </head>
 
 
@@ -498,20 +500,82 @@
             <div class="col-3">
                 <h6>Vitae nunc sagittis</h6>
                 <p>Duis non dolor sit amet lorem rhoncus commodo ornare tellus vel quam.</p>
+                <p>Sapien porttitor auctor integer pharetra ligula sit elementum in lobortis dolor ullamcorper.</p>
             </div>
-            <div class="col3">
+            <div class="col-3">
                 <h6>Faucibus a lacus</h6>
                 <article>
-                    <h2><a href="#">Tincidunt phasellus</a></h2>
+                    <a href="#">Tincidunt phasellus</a>
                 </article>
                 <div class="time">
                     Friday, 6<sup>th</sup> April 2045
                 </div>
+                <p>Nullam eu velit vestibulum egestas nisi lacinia fringilla lectus mauris enim magna placerat
+                    venenatis.</p>
+            </div>
+            <div class="col-3">
+                <h6>Molestie elit id</h6>
+                <ul>
+                    <li><a href="#">Placerat arcu suspendisse</a></li>
+                    <li><a href="#">Vestibulum ultrices id dui</a></li>
+                    <li><a href="#">Tempus commodo maximus</a></li>
+                    <li><a href="#">Suspendisse potenti vivamus</a></li>
+                    <li><a href="#">Gravida malesuada praesent</a></li>
+                </ul>
+            </div>
+            <div class="col-3">
+                <h6>Ultrices odio cras</h6>
+                <ul>
+                    <li><a href="#">aenean eget tempor orci</a></li>
+                    <li><a href="#">Vcurabitur sit amet massa</a></li>
+                    <li><a href="#">sollicitudin elementum</a></li>
+                    <li><a href="#">nunc sit amet laoreet libero</a></li>
+                    <li><a href="#">donec erat enim consectetur</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!-- footer-bottom -->
+    <div class="footer-bottom">
+        <div class="footer-bottom-content">
+            <div class="row">
+                <div class="col-6">Copyright © 2009 - 2021 - All Rights Reserved - <a href="#">Domain Name</a></div>
+                <div class="col-6"><a href="#">OS Templates</a></div>
             </div>
         </div>
     </div>
 </div>
 
+
+<!-- gotop -->
+<div class="gotop">
+    <a href="#">
+        <i class="fa fa-angle-up"></i>
+    </a>
+</div>
+
+
+
+
+
+<script type="text/javascript">
+    $(function () {
+        /* 按下GoTop按鈕時的事件 */
+        $('.gotop').click(function () {
+            $('html,body').animate({ scrollTop: 0 }, 'slow');   /* 返回到最頂上 */
+            return false;
+        });
+
+        /* 偵測卷軸滑動時，往下滑超過400px就讓GoTop按鈕出現 */
+        $(window).scroll(function () {
+            if ($(this).scrollTop() > 400) {
+                $('.gotop').fadeIn();
+            } else {
+                $('.gotop').fadeOut();
+            }
+        });
+    });
+</script>
 
 
 
